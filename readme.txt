@@ -1,3 +1,10 @@
+**update**
+
+Use upscalecreateimages.py
+upscaleuploadimages.py
+
+If you want better quality designs **costs more tokens**
+
 First go to https://beta.dreamstudio.ai/account and get your secret key
 Then go to openAI and get your secret key
 Finally go to printify and get your secret key https://try.printify.com/vi2c7btfi5fq
