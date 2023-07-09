@@ -110,7 +110,7 @@ for idx, row in tqdm(df.iterrows(), total=df.shape[0]):
     
 
     # Generate the image using the Stability.ai API
-    url = "https://api.stability.ai/v1/generation/stable-diffusion-xl-beta-v2-2-2/text-to-image"
+    url = "https://api.stability.ai/v1/generation/stable-diffusion-v1-5/text-to-image"
     headers = {"Authorization": f"Bearer {stability_ai_key}", "Accept": "image/png"}
     data = {
         "width": 512,
