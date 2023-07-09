@@ -2,7 +2,7 @@
 
 The beta stable diffusion 0.9 cannot be used for commercial use, use this engine until it's allowed for commercial use
 
-stable-diffusion-512-v2-
+stable-diffusion-v1-5
 
 **update**
 
