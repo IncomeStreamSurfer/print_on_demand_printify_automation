@@ -9,8 +9,8 @@ from PIL import Image, ImageDraw
 
 
 # Set OpenAI and Stability.ai API keys https://platform.openai.com/account/api-keys AND https://beta.dreamstudio.ai/account
-openai.api_key = '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'
-stability_ai_key = 'sk-jVh7692Bw0hgpRrNEUPutBoC8CqlTqL46Vt9QhFlLUqtQGsP'
+openai.api_key = 'your_key_here'
+stability_ai_key = 'your_key_here'
 
 # Function to generate a clickable title using GPT-3.5-turbo 
 
