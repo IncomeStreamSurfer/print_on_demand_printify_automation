@@ -1,0 +1,8 @@
+print_in_demand_venv
+__pycache__
+.env
+data
+.vscode
+image_*
+output.csv
+config.py

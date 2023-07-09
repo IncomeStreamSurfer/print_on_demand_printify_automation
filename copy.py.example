@@ -1,0 +1,20 @@
+# config.py
+
+# Printify API
+access_token = "YOUR_ACCESS_TOKEN"
+shop_id = "YOUR_SHOP_ID"
+base_url = "https://api.printify.com/v1"
+
+# OpenAI API
+openai_key = "YOUR_API_KEY"
+
+# Stability.ai API
+stability_ai_key = "YOUR_STABILITY_AI_KEY"
+
+# CSV file path
+# csv_path = "product_information.csv"
+
+# Product blueprint, provider, and variant IDs
+blueprint_id = 1098
+print_provider_id = 228
+variant_id = 82064
