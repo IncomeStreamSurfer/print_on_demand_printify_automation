@@ -11,14 +11,14 @@ openai.api_key = 'YOUR_OPEN_AI_KEY'
 stability_ai_key = 'YOUR_STABILITY_AI_KEY'
 
 # Set Stability API key for image upscaling
-api_key = 'YOUR_STABILITY_AI_KEY'
+api_key = 'YOUR_STABILIT_AI_KEY'
 if api_key is None:
     raise Exception("Missing Stability API key.")
 api_host = os.getenv("API_HOST", "https://api.stability.ai")
 
 
 def generate_clickable_title(detail):
-    prompt = f"Generate a catchy and clickable title for a T-shirt with the theme: '{detail}'. Maximum 50 characters. At the end of each title write Acrylic Wall Art Panels"
+    prompt = f"Generate a catchy and clickable title for a Cork Back Coaster with the theme: '{detail}'. Maximum 50 characters. At the end of each title write Cork Back Coaster"
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -31,7 +31,7 @@ def generate_clickable_title(detail):
     return clickable_title
 
 def generate_description(detail):
-    prompt = f"Generate a compelling description for a T-shirt with the theme: '{detail}'. Maximum 150 characters."
+    prompt = f"Generate a compelling description for a Cork Back Coaster with the theme: '{detail}'. Maximum 150 characters."
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -42,13 +42,13 @@ def generate_description(detail):
     description = response['choices'][0]['message']['content'].strip()
     description = description.replace('"', '')  # Remove double quotes
     description += """
-    <p>Acrylic art panels are a modern way to display beautiful and vibrant art that looks like it's embedded in clear glass. They have a clear, glossy acrylic surface and a white vinyl backing. Four silver stand-offs make it very easy to mount to the wall. Make your own original designs and print them on any (or all) of the seven available panel sizes in horizontal and vertical orientations. Square dimensions are available.</p>
-<p>.: Material: Clear acrylic with white vinyl backing<br />.: Clear, glossy surface<br />.: Seven sizes to choose from<br />.: Horizontal, vertical and square options available<br />.: NB! For indoor use only</p>
+    <p>This personalized photo coaster helps you market yourself the right way or uplift any table with a custom touch. Each round and square coaster is made with a high-gloss, polyester-coated hardboard top, and features a genuine cork bottom to prevent sliding. </p>
+<p>.: Material: Genuine cork bottom finished with a glossy white top made of polyester-coated hardboard<br />.: Size: 3.75&Prime; x 3.75&Prime; (Square) and 4&Prime; x 4&Prime; (Round)<br />.: High-gloss top<br />.: NB! One coaster per listing<br />.: Assembled in the USA from globally sourced parts</p>
     """
     return description
 
 def generate_tags(detail):
-    prompt = f"Generate relevant tags for a T-shirt with the theme: '{detail}'. Separate the tags with commas."
+    prompt = f"Generate relevant tags for a Cork Back Coaster with the theme: '{detail}'. Separate the tags with commas."
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
