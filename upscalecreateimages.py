@@ -78,7 +78,8 @@ for idx, row in tqdm(df.iterrows(), total=df.shape[0]):
     # Use the detail from the CSV as the image prompt
     image_prompt = detail
 
-    # Generate the image using the "stable-diffusion-xl-beta-v2-2-2" engine
+    # Generate the image using stable diffusion
+    
     url = "https://api.stability.ai/v1/generation/stable-diffusion-v1-5/text-to-image"
     headers = {"Authorization": f"Bearer {stability_ai_key}", "Accept": "image/png"}
     data = {
