@@ -4,11 +4,11 @@ import base64
 import os
 
 # Set your API credentials 
-access_token = "YOUR_PRINTIFY_API_KEY"
+access_token = "your_printful_api_key"
 
 # Find your shop ID by running this: curl -X GET https://api.printify.com/v1/shops.json --header "Authorization: Bearer YOUR_PRINTIFY_API_KEY"
 
-shop_id = "YOUR_SHOP_ID"
+shop_id = "your_shop_Id"
 
 # Set the URL for the API endpoints
 base_url = "https://api.printify.com/v1"
@@ -40,25 +40,25 @@ for idx, row in image_df.iterrows():
 
     # To change the print object, use this to find the variant id curl -X GET "https://api.printify.com/v1/catalog/blueprints/1098/print_providers/228/variants.json" "Authorization: Bearer YOUR_PRINTIFY_KEY"
    
-   # Current settings are for wall art
+   # Current settings are for cork art
    
     # Create the product with the uploaded image
     data = {
         "title": row['title'],
         "description": row['description'],
         "tags": row['tags'].split(', '),  # Assuming tags are comma-separated in the CSV
-        "blueprint_id": 1098,  # Replace with the actual blueprint ID
-        "print_provider_id": 228,
+        "blueprint_id": 480,  # Replace with the actual blueprint ID
+        "print_provider_id": 70,
         "variants": [
             {
-                "id": 82064,  # Replace with the actual variant ID
+                "id": 71689,  # Replace with the actual variant ID
                 "price": 3999,
                 "is_enabled": True
             }
         ],
         "print_areas": [
             {
-                "variant_ids": [82064],  # Replace with the actual variant ID
+                "variant_ids": [71689],  # Replace with the actual variant ID
                 "placeholders": [
                     {
                         "position": "front",
