@@ -8,7 +8,7 @@ access_token = "YOUR_PRINTIFY_API_KEY"
 
 # Find your shop ID by running this: curl -X GET https://api.printify.com/v1/shops.json --header "Authorization: Bearer YOUR_PRINTIFY_API_KEY"
 
-shop_id = "10450952"
+shop_id = "YOUR_SHOP_ID"
 
 # Set the URL for the API endpoints
 base_url = "https://api.printify.com/v1"
