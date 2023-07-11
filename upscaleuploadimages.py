@@ -38,7 +38,7 @@ for idx, row in image_df.iterrows():
     response = requests.post(upload_url, headers=headers, json=data)
     image_id = response.json()["id"]
 
-    # To change the print object, use this to find the variant id curl -X GET "https://api.printify.com/v1/catalog/blueprints/1098/print_providers/228/variants.json" "Authorization: Bearer YOUR_PRINTIFY_KEY"
+    # To change the print object, use this to find the variant id curl -X GET "https://api.printify.com/v1/catalog/blueprints/852/print_providers/73/variants.json" -H "Authorization: Bearer YOUR_PRINTIFY_KEY"
    
    # Current settings are for cork art
    
