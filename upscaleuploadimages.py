@@ -4,11 +4,11 @@ import base64
 import os
 
 # Set your API credentials 
-access_token = "YOUR_PRINTIFY_TOKEN"
+access_token = "YOUR_PRINTIFY_API_KEY"
 
-# Find your shop ID by running this: curl -X GET https://api.printify.com/v1/shops.json --header "Authorization: Bearer YOUR_PRINTIFY_KEY"
+# Find your shop ID by running this: curl -X GET https://api.printify.com/v1/shops.json --header "Authorization: Bearer YOUR_PRINTIFY_API_KEY"
 
-shop_id = "YOUR_STORE_ID"
+shop_id = "10450952"
 
 # Set the URL for the API endpoints
 base_url = "https://api.printify.com/v1"
@@ -27,7 +27,7 @@ headers = {
 
 for idx, row in image_df.iterrows():
     # Convert the image to Base64
-    with open(row['upscaled_local_path'], "rb") as img_file:
+    with open(row['local_path'], "rb") as img_file:
         img_b64 = base64.b64encode(img_file.read()).decode('utf-8')
 
     # Upload the image to the Printify media library
@@ -67,7 +67,7 @@ for idx, row in image_df.iterrows():
                                 "id": image_id,
                                 "x": 0.5,
                                 "y": 0.5,
-                                "scale": 1.5,
+                                "scale": 1.0,
                                 "angle": 0
                             }
                         ]
