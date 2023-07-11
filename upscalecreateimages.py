@@ -84,7 +84,7 @@ for idx, row in tqdm(df.iterrows(), total=df.shape[0]):
     data = {
         "width": 512,
         "height": 512,
-        "style_preset": "neon-punk",
+        "style_preset": "pixel-art",
         "text_prompts": [
             {
                 "text": image_prompt,
