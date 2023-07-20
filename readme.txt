@@ -1,3 +1,8 @@
+Learn how to use this stuff:
+
+https://www.youtube.com/c/incomestreamsurfers
+
+
 **update**
 
 The beta stable diffusion 0.9 cannot be used for commercial use, use this engine until it's allowed for commercial use
