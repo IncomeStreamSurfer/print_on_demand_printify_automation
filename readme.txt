@@ -1,3 +1,5 @@
+> **Free community:** the current version of this, plus my other Claude Code skills, prompts and courses, is in my free Skool community: https://www.skool.com/iss-ai-automation-school-6342/about
+
 Learn how to use this stuff:
 
 https://www.youtube.com/c/incomestreamsurfers
